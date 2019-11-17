@@ -1,0 +1,43 @@
+Git is a version control software. 
+It allows you to easily track changes and refer back to previous versions of code. It can also keep track of parallel versions, using a feature called branching. 
+
+To turn a folder into a Git repository, go to the folder using the command line, and type $ git init. 
+
+The command will create hidden files which allows Git to track changes you have made in the repository. 
+To see the files, type -ls a. If you delete the hidden files, you will lose the data Git has collected for you. 
+
+To check the status, type git status. When it is an empty file without any changes yet, it should show "Initial commit, nothing to commit"
+
+Each save is called a commit; the message is telling us that our project has no unsaved changes. 
+
+After creating a file in the repository, we have to use the command 'git add <filename>' so that Git will start tracking the changes in the file. 
+
+'git add . ' will add all of the files in the working directory into the next commit. 
+
+Once you are ready to officially record this version of the project, type; 
+
+$ git commit -m "created a new post.txt file"
+
+the -m option allows you to include a message which describes the change made to the file. 
+
+
+git add & git commit 
+This 2 step process allows you to commit multiple changes seperately. Allows you to "fork"??
+
+A commit ID is a 40 digit ID.
+
+$ git log : allows you to view the timelime of changes.
+
+
+git status shows staged and unstaged changes.
+git diff only shows unstaged changes.
+
+Before git add -> unstaged
+After git add, Before git commit -> staged, to be committed
+After git commit -> Commmited
+
+
+
+
+
+

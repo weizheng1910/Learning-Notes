@@ -1,0 +1,38 @@
+-------- The World Wide Web and the Internet -----
+
+When two or more computers are connected, they form a network. 
+When 2 or more networks connect, they form an interconnected network, aka the internet.
+
+That’s all the internet really is — a global system of computer networks.
+
+Hypertext Transfer Protocol. HTTP. WWW. 
+The main method with which we transfer data over the internet. 
+
+We access the web through web browsers like Chrome. These browsers allow computer to traverse the internet to access data on other computers we specify using in the URL, or Uniform Resource Locators. 
+
+A webpage is a collection of files stored in a server. It is akin to a digital file cabinet.
+
+Every computer connected to the internet has a unique address similar to the postal addresses of buildings in the new world. 
+
+IP addresses are difficult for humans to remember. Thats why we have domain name, so that it is easier for us to remember. A directory which is called the DNS, or the Domain Name System is where the computer would search the IP address when we type in the domain name in the web browser.
+
+------Programming Languages ------- 
+
+Programming is the act of writing step by step instructions in a way a computer can understand. 
+
+Front-End 
+
+Back-End
+
+-----Command Line Interface ------
+
+Interacting with Computer only through text using the command line, unlike the layman we use the mouse to click and drag files through the GUI. 
+
+Command Line is accessed using a terminal application. 
+On Mac and Linux, the terminal application is called Terminal.
+On Windows, it is either Powershell or Command Prompt.
+
+Terminal Applications act as a UI for the shell, which processes your commands.
+
+There is no common set of commands for Mac, Linux and Windows.
+

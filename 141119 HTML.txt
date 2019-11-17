@@ -1,0 +1,95 @@
+Things covered:
+1. Adding normal text, paragraphs, heading elements. 
+2. Adding hyperlinks
+3. Adding Lists, ordered, unordered
+4. Adding images. 
+5. Learning HTML basic structure. 
+6. Span vs Block
+
+
+<h1>
+</br>
+<o1>
+<u1>
+
+---------------------------------HTML Boilerplate ----- 
+
+<!DOCTYPE html>
+
+<html>
+	<head> 
+		<title></title>
+	<head>
+
+<body>
+</body>
+	
+
+</html>
+
+---------------------------------------------------------
+
+<head> contains most under-the-hood stuff that helps identify your webpage and make it show up in search results online. This is called metadata. One such example is the <title> tag.
+
+<title> provides your webpage with a name that will appear in the search engine results. When you bookmark the website, it will be the name which would appear in the bookmark list. It also appears at the browser tab. 
+
+<body> contains everything which would be displayed on the webpage. 
+
+We use indentation to see which is nested inside each other. 
+
+--------------------------------------------------------------
+
+<h2>
+<p>
+<footer>
+
+---------------------------------------------------------------
+Adding a hyperlink
+
+<a href="https://www.youtube.com/watch?v=vm32-ted2rI" target="_blank">Rock out to a demo.</a>
+
+"a" stands for anchor. An anchor tag is a way to link to another place. 
+"href" stands for hypertext reference. This is the address you are linking to. 
+"target = "_blank" " tells the browser to display the destination page in a new window or tab. Leaving it out take them away from our page. 
+
+-----------------------------------------------------------------
+
+<ul>
+	<li> List 1</li>
+	<li> List 2</li>
+	<li> List 3</li>
+
+</ul>
+
+**
+
+<ul> stands for unordered list.
+<li> stands for list object.
+<ol>
+
+-----------------------------------------------------------------
+Adding an image 
+
+<img src="https://bit.ly/2FsuPLG" alt="Tater Tot Casserole" width="324" height="242" />
+
+<img> means image
+<src> means source
+<alt> stands for alternative text, which will be displayed if the image fails to load. 
+<width> self explanatory. Make sure digits are wrapped in inverted commas
+<height> self explanatory. Make sure digits are wrapped in inverted commas
+
+-------------------------------------------------------------------
+
+<span> is a inline element for phrasing content. Typically used to group elements for styling purposes. It is similar to <div>, but <div> is a block element while <span> is inline element. 
+
+<div> is a tool to group content into boxes. 
+<p> is a box too. Boxes have height and width settings. 
+
+
+
+
+
+
+
+
+																													

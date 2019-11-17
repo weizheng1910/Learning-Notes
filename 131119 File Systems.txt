@@ -1,0 +1,13 @@
+File Systems 
+
+- Parent Directory 
+- Sub Directory 
+- Root Directory 
+
+Absolute Path:
+Starts from the root directory. Lists all parent directories and child directories along the way. 
+
+Relative Path; 
+Show partially.
+
+

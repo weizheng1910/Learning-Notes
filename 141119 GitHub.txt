@@ -1,0 +1,29 @@
+Git is a distributed version control system.
+Github is a web-based service for hosting Git repositories.
+A repository is a place where data is stored and maintained. 
+
+Git stores changes locally
+GitHub stores changes in the cloud, allows developers to share their code, comment on it, and review changes. 
+
+
+6 stages
+
+1. Forking - adding a copy of someone else's GitHub repo into your account.
+2. Cloning - making a local copy of the fork.
+	-open terminal 
+	-go to where you'd like to store repository
+	-type $ git clone https://url-to-clone
+	-the url is found by clicking the green button that says "Clone or Download"
+	-for windows, ctrl + insrt to copy,shift + insrt to paste.
+3. Edit - use Atom or Sublime to edit. 
+4. Adding and Committing 
+	- $ git add <your-file-name>
+	- $ git commit -m "message"
+5. Pushing 
+	- Your local repo will have the updated changes but your remote repo does not. 
+	- To update remote repo, you have to push those changes using git push origin master. 
+	- "origin" is the shortcut for the url in your default remote repo. 
+	- "master" refers to the branch on the remote repo where youare currently adding your changes. 
+
+
+

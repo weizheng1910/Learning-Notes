@@ -1,0 +1,74 @@
+
+
+Block Elements stack up. Has a line-break before and after it. Takes up the full width of space. Breaks flow.
+Inline Elements line up. Follows the flow of the line. Only takes up as much space as the characters it contains.
+
+Examples of block elements: 
+
+<div> - general tag which defines a block section in a document. ( This is a called a generic element)
+<p> - paragraph
+<h1 - 6> - heading and their different sizes
+<ol>,<ul>,<li> - lists
+
+Examples of line elements:
+
+<span> - general tag which defines an inline section in a document. (This is a called a generic element)
+<a> - anchor tags
+<img> - image
+<strong> - means strong emphasis
+<em> - bold, emphasise
+
+-------------------------
+Properties
+
+display: block/inline
+
+It is possible to set the display of an block element to inline and vice versa. 
+
+-------------------------------
+
+Semantic Elements - have names which clearly identify their purpose.
+Examples of Semantic Elements: <header>,<footer>,<main>,<aside>
+
+<header> - logos,headlines,titles,links
+<footer> - copyright info, link to career pages, contact info, terms of use
+<main> - primary content
+<aside> - secondary content, supplemental information, archived links
+
+<section> - group contents that shares the same purpose, eg. a section which introduces yourself would show: <h1> of your name, an <img> with a headshot, and a <p> with a short bio.
+
+<nav> - navigational links which helps users get around the page
+<article> - standalone blocks of text, such as news articles, blog posts, etc.
+
+Non-semantic Elements - have names which do not clearly identify their purpose. 
+
+
+For <li>, the objects will appear side-by-side instead of being on every line. 
+
+----------------------------
+
+
+You may use background-color to see the difference between inline and block elements. 
+
+-----------------------------
+
+Other HTML Elements 
+
+<table> - self explanatory. A table.
+<footer>
+<header>
+<figure> - graphs, charts, etc. 
+
+----------------------------------
+
+**** Every HTML element on a webpage is in a box! ***********
+
+Thus, every element has: 
+
+-content
+-padding : between the content and the box ( padding: 0px 20px 20px 20px (NESW)) 
+-border : outside the padding but within the box (eg. border: 10px black solid;)
+-margin : outside the box; clears an area around the border. By default, the elements are aligned to the topleft of the page. However, a box can be horizontally centered by setting right and left margins to auto. i.e. (margin: 0 auto;)
+
+----------------------------------
+

@@ -1,0 +1,90 @@
+--Terminal Commands ---- 
+
+$ pwd stands for print working directory. It shows where you are currently "located" in the file system. 
+$ ls shows the contents of the directory you are currently in. 
+$ cd means to change directory, equivalent to double clicking.
+$ cd .. means to go back where you came from, or to go back to your parent directory.
+
+Many commands consist of 3 parts: the command, followed by flags(or options), and finally arguments.
+
+For example: 
+
+$ ls -a 
+
+This command lists all files whose names begin with a ( in a given directory).
+
+$cd Downloads
+
+This command change the directory to the "Downloads" folder.
+
+$ find . -name <insert name here> 	 This will help you find the file in the directory you are in. 
+
+Eg.
+
+$ find . -name carmen_sandiego.png
+
+------------------------------------------
+
+$ cd ~ 
+
+"~" means home directory. cd ~ refer you to your home directory.
+
+$ touch joke.txt
+
+Creates a file called "joke.txt". If we "touch" a file that already exists, it will not be overwritten. 
+
+$ start joke.txt
+
+Opens the file joke.txt
+ -r 
+$ mkdir funny_things
+
+Creates a directory(folder) called funny_things. 
+
+$ mv joke.txt funny_things/
+
+Moves the file joke.txt into funny_things folder. The / in funny_things/ specify that it is a directory and not a file. Without it, you would rename joe.txt as a new file, funny_things. 
+
+$ cp joke.txt joke2.txt
+
+Duplicates the file joke.txt and names it joke2.txt . If the second argument is a directory, the specified file is copied into the directory.
+
+$ rm joke2.txt 
+
+Permanently remove the files. 
+
+$ cp -r jokes copy_of_jokes
+
+Makes a copy of jokes, and anything within the directory (-r means to recursively copy anything within the directory), and name it copy_of_jokes
+
+$ rm -r copy_of_jokes 
+
+$ cp -r World/ ~
+
+Copying the World/ directory from the Downloads folder to the Home directory.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,149 @@
+CSS tells browsers how that content should look by controlling factors such as layout, spacing, colors, fonts, and more.
+------------------------------------------------
+Why is HTML separate from CSS?
+
+Scalability. Easier to make a design change which apply to many pages. 
+
+------------------------------------------------
+Adding color using 2 different methods:
+
+rgba
+rgb
+hexadecimal
+
+------------------------------------------------
+CSS Syntax:
+
+h1 {font-family: Arial, sans-serif}
+
+------------------------------------------------
+
+CSS Properties:
+
+background-color: steel blue;
+background: white;
+background-size: cover;
+
+font-family: helvetica / "times new roman";
+font-family: 'Open Sans', sans-serif; (sans-serif is the back-up font, used when the first cannot be accessed)
+font-size: 30px;
+font-weight: normal(400)/bold(700);
+font-style: italic;
+font-variant: normal/small-caps/initial/inherit;
+
+text-align: center/left/right;
+text-decoration: underline/overline/line-through;
+text-transform: uppercase/lowercase;
+letter-spacing: 10px/0.5em;
+
+
+padding: 0px 0px 0px 0px NESW;
+margin: 0 0 0 0 NESW;
+border: 2px solid white; 
+float: left/right;
+border-radius: 40px;
+border-bottom: 40px solid black;
+line-height: 26px;
+*border: 10px green solid; (weight, color, style)
+display: inline-block; (so that block elements have inline characteristics)
+height: 50% ( means 50% of parent element)
+
+
+------------------------------------------------
+
+CSS selectors identifies the element to be styled.
+
+Examples of CSS selectors are classes, IDs, <span>
+
+
+------------------------------------------------
+About em
+
+em is a unit of measurement which is relative to the font-size.
+1 unit of em is equivalent to the defined font-size.
+If defined font-size is 16px, a 0.5em = 0.5 * 16px = 8px
+
+.example {
+	font-size: 20px;
+	border-radius: .5em;
+
+}
+
+------------------------------------------------
+
+Using new fonts from Google: 
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" type="text/css">
+
+------------------------------------------------
+
+Classes and IDs 
+
+These are HTML attributes that provide labels for elements that we can reference and style in our CSS.
+As an ID is used to uniquely identify an element, it can only be used once. Classes, however, are used to group elements together, so they can be used to label elements anywhere in the page.
+
+
+
+Use a hex to refer to an ID: #controlPanel{ }
+Use a . to refer to a class, .bulb{ }
+
+
+*****Adding a class attribute in a tag******
+
+<div id="stopLight" class="bulb"></div>
+
+.bulb {
+  height: 150px;
+  width: 150px;
+)
+
+
+------------------------------------------------
+
+Best Practices
+
+1.Use element selector when appropriate ie, a {color; font-size 30px;}
+2.Use IDs sparingly (for CSS). Professional developers almost never use them. Using classes would allow scalability and clean code. 
+3.Use IDs for Javascript instead
+
+------------------------------------------------
+A CSS Shortcut 
+
+To save time, elements that will have similar styles can be referenced as follows:
+
+h1,h2,p {
+	background: white;
+	text-align: center;	
+}
+
+
+
+------------------------------------------------
+
+Linking HTML and CSS 
+
+Link Attributes:
+rel - relationship between linked file to current file.
+type - what type of file is being linked. 
+href - gives the path to the file.
+
+To link the CSS file to the HTML file, type the below under the <head> tag:
+
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+The address in the href is a relative address. Since the index.html file and the CSS folder are both inside the bulletin folder, we simply have to open the CSS folder and look for the main.css file. Hence css/main.css .
+
+------------------------------------------------
+Best Practices
+
+Within your local repo, create a new subfolder for each project. You should always back up your work on GitHub!
+
+------------------------------------------------
+Linking Images
+
+Two ways to link images: locally or through an online image hosting website. 
+
+<img src="images/cat.jpg">
+<img src="http://i.imgur.com/z9gGd0t.jpg" alt="Grumpy cat">
+<img src="http://i.imgur.com/z9gGd0t.jpg" alt="grumpy cat" title="grumpy cat">
+

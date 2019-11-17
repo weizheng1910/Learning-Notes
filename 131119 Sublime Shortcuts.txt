@@ -1,0 +1,13 @@
+Sublime Shortcuts
+
+- Type "html" immediately followed by tab to get html skeleton.
+- Type "lorem" immediately followed by tab to get lorem wordings. This is to see how words would look like on the screen. 
+- Drag file into Sublime and the file would open. 
+- "Alt + Shift + 2" to show 2 columns. If you want to, say, work on HTML and CSS simultaneously.
+- "Ctrl + P" to go to a specific line. 
+- "Ctrl + L" to select the whole line.
+- Select a line, then "Ctrl + Shift + Up" to move it up, or "Ctrl + Shift + Down" to move it down. 
+- "Ctrl + Shift + A" selects everything within a tag.
+- "Ctrl + Shift + J" then "Ctrl" and "{"to add brackets to a block of code.
+- "Ctrl + Shift + V" to paste code with the exact same indentation.
+- "Ctrl + D" show cursors of the same words. Useful to edit to make identical edits at multiple sections.
