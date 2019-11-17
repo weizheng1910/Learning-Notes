@@ -37,6 +37,11 @@ After git add, Before git commit -> staged, to be committed
 After git commit -> Commmited
 
 
+* git remote add - adds a remote repo of your local repo.
+  git remote add <what you want to name your remote repo> <URL which your remote Repo is located>
+
+## git remote repo is used when you have a local repo which you want to store in the cloud
+
 
 
 
