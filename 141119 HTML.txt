@@ -85,6 +85,15 @@ Adding an image
 <div> is a tool to group content into boxes. 
 <p> is a box too. Boxes have height and width settings. 
 
+------------------------------------------------------------------------
+
+tag attributes
+
+<img src="google.com/" alt text="image" height="500">
+
+alt text and height, are all attributes.
+'data-' attributes are meant to store data about an element not tied to a style. 
+See DOM Manipulation.
 
 
 
