@@ -1,7 +1,10 @@
 Git is a version control software. 
-It allows you to easily track changes and refer back to previous versions of code. It can also keep track of parallel versions, using a feature called branching. 
 
-To turn a folder into a Git repository, go to the folder using the command line, and type $ git init. 
+It allows you to easily track changes and refer back to previous versions of code. 
+It can also keep track of parallel versions, using a feature called branching. 
+
+To turn a folder into a Git repository, go to the folder using the command line, and type $ git init.
+git init is normally not necessary when working with GitHub. 
 
 The command will create hidden files which allows Git to track changes you have made in the repository. 
 To see the files, type -ls a. If you delete the hidden files, you will lose the data Git has collected for you. 
@@ -12,7 +15,17 @@ Each save is called a commit; the message is telling us that our project has no 
 
 After creating a file in the repository, we have to use the command 'git add <filename>' so that Git will start tracking the changes in the file. 
 
-'git add . ' will add all of the files in the working directory into the next commit. 
+'git add . ' OR 'git add -A' will add all of the files in the working directory into the next commit. 
+'git add <file name>' to add a file.
+
+
+-------------------------------------------------------------------------------
+git add and git commit
+
+A staging area allows you to organise yourself, a space for you to choose and finalise the files you want to commit.
+
+Its akin to a hallway where you put your bags of stuff before the movers come in and pick them up, when you are moving houses. 
+-------------------------------------------------------------------------------
 
 Once you are ready to officially record this version of the project, type; 
 
@@ -20,27 +33,21 @@ $ git commit -m "created a new post.txt file"
 
 the -m option allows you to include a message which describes the change made to the file. 
 
-
-git add & git commit 
-This 2 step process allows you to commit multiple changes seperately. Allows you to "fork"??
-
 A commit ID is a 40 digit ID.
 
 $ git log : allows you to view the timelime of changes.
 
-
-git status shows staged and unstaged changes.
-git diff only shows unstaged changes.
+git status shows staged and unstaged changes. (before and after git add)
+git diff only shows unstaged changes. (only before git add, when nothing is done) 
 
 Before git add -> unstaged
 After git add, Before git commit -> staged, to be committed
 After git commit -> Commmited
 
-
-* git remote add - adds a remote repo of your local repo.
+When you have a local repo you want to upload onto GitHub, use:
+  git remote add - adds a remote repo of your local repo.
   git remote add <what you want to name your remote repo> <URL which your remote Repo is located>
 
-## git remote repo is used when you have a local repo which you want to store in the cloud
 
 
 

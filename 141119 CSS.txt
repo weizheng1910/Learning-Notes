@@ -15,7 +15,9 @@ hexadecimal
 CSS Syntax:
 
 h1 {font-family: Arial, sans-serif}
-
+.classSelector {font-family: Arial, sans-serif}
+#idSelector {font-family: Arial, sans-serif}
+h1,h2,p {font-family: Arial, sans-serif}
 ------------------------------------------------
 
 CSS Properties:
@@ -36,7 +38,6 @@ text-decoration: underline/overline/line-through;
 text-transform: uppercase/lowercase;
 letter-spacing: 10px/0.5em;
 
-
 padding: 0px 0px 0px 0px NESW;
 margin: 0 0 0 0 NESW;
 border: 2px solid white; 
@@ -48,13 +49,11 @@ line-height: 26px;
 display: inline-block; (so that block elements have inline characteristics)
 height: 50% ( means 50% of parent element)
 
-
 ------------------------------------------------
 
 CSS selectors identifies the element to be styled.
 
 Examples of CSS selectors are classes, IDs, <span>
-
 
 ------------------------------------------------
 About em
@@ -82,8 +81,6 @@ Classes and IDs
 These are HTML attributes that provide labels for elements that we can reference and style in our CSS.
 As an ID is used to uniquely identify an element, it can only be used once. Classes, however, are used to group elements together, so they can be used to label elements anywhere in the page.
 
-
-
 Use a hex to refer to an ID: #controlPanel{ }
 Use a . to refer to a class, .bulb{ }
 
@@ -97,6 +94,11 @@ Use a . to refer to a class, .bulb{ }
   width: 150px;
 )
 
+
+------------------------------------------------
+CSS Styling Order of Precedence
+
+If an element has multiple selectors with different styles, the intepreter will run the styling instructions of the most specific selector.
 
 ------------------------------------------------
 
@@ -115,8 +117,6 @@ h1,h2,p {
 	background: white;
 	text-align: center;	
 }
-
-
 
 ------------------------------------------------
 

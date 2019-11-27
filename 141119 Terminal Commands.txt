@@ -5,6 +5,10 @@ $ ls shows the contents of the directory you are currently in.
 $ cd means to change directory, equivalent to double clicking.
 $ cd .. means to go back where you came from, or to go back to your parent directory.
 
+**To enter a file name with space use the '\' at the end of the first word of the file name. 
+For example: 
+test\ folder
+
 Many commands consist of 3 parts: the command, followed by flags(or options), and finally arguments.
 
 For example: 
@@ -36,7 +40,7 @@ Creates a file called "joke.txt". If we "touch" a file that already exists, it w
 $ start joke.txt
 
 Opens the file joke.txt
- -r 
+ 
 $ mkdir funny_things
 
 Creates a directory(folder) called funny_things. 
@@ -44,10 +48,14 @@ Creates a directory(folder) called funny_things.
 $ mv joke.txt funny_things/
 
 Moves the file joke.txt into funny_things folder. The / in funny_things/ specify that it is a directory and not a file. Without it, you would rename joe.txt as a new file, funny_things. 
+** 
+mv <filename1> to <filename2> would mean moving the contents in filename1 into filename2,
+Meaning after the operation, you will have a file with named <filename2> with filename2's content inside.
 
 $ cp joke.txt joke2.txt
 
-Duplicates the file joke.txt and names it joke2.txt . If the second argument is a directory, the specified file is copied into the directory.
+-Duplicates the file joke.txt and names it joke2.txt . If the second argument is a directory, the specified file is copied into the directory.
+-Similar to mv, but original file is not removed.
 
 $ rm joke2.txt 
 
@@ -63,7 +71,7 @@ $ cp -r World/ ~
 
 Copying the World/ directory from the Downloads folder to the Home directory.
 
-
+Use '-r' if you want to copy, move or remove a folder with contents within it. 
 
 
 
