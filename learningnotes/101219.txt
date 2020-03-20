@@ -1,0 +1,21 @@
+Review CSS = http://flukeout.github.io/
+
+Introduction to Functions:
+
+functions - return gives an output.
+console.log only display results in the console
+
+let vs variable 
+
+es5 version - oldest version. 
+es6 version - 
+
+.textContent 
+
+typeOf 
+
+https://github.com/wdi-sg/box-model-lab
+
+git remote -v : know  a list of remotes;
+
+https://github.com/wdi-sg/temperature_converter

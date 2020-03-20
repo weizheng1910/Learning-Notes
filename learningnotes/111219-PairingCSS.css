@@ -1,0 +1,27 @@
+.box-demo{
+  background-color:yellow;
+  border:1px solid black;
+}
+
+.inline-demo{
+	display: inline;
+	background-color:yellow;
+  border:1px solid black;
+  margin: 30px;
+  padding: 30px;
+}
+
+.inline-block-demo{
+	display: inline-block;
+	background-color:pink;
+  border:1px solid black;
+  margin: 30px;
+  padding: 0px;
+  position: absolute;
+}
+
+.test{
+	position: absolute;
+	left:0px
+	top: 0px;
+}

@@ -1,0 +1,125 @@
+
+Morning Exercise: https://github.com/wdi-sg/brook-and-lyn
+
+-- When listing the URL link in the CSS, important to check where the index.html file is 
+AND also your destination file. Use "../images". To go back one folder. 
+
+-------------------------------------------------------------------
+Projects
+
+
+
+
+-------------------------------------------------------------------
+Morning Lesson.
+
+DOM Manipulation
+
+setTimeout(saySomething(), 2000) -> Execute function now, ignores the 2000 miliseconds.
+
+setTimeout(saySomething, 2000) -> Ask Javascript to execute the function after 2000 miliseconds.
+
+** Remember the brackets should be left out if you want JS to execute it.
+
+var button = document.querySelector('#my-button');
+
+button.addEventListener('click', function(){	setTimeout(answer,4000} );
+
+** It is possible to attach multiple events to something. 
+
+-------------------------------------------------------------------
+
+clearInterval('<interval Id>',<milliseconds>);
+
+Chrome
+.
+.
+.
+DOM
+.
+.
+.
+V8 JS
+
+-------------------------------------------------------------------
+
+var button1 = document.querySelector('#button-1')
+var button2 = document.querySelector('#button-2')
+var button3 = document.querySelector('#button-3')
+var button4 = document.querySelector('#button-4')
+
+var myButtonThing = function(event){
+
+  console.log( this.id );
+  // console.log( event.target.id );
+
+  var number = Math.random();
+  console.log("HAHAHAHA" + number);
+};
+
+-------------------------------------------------------------------
+
+button1.addEventListener('click', myButtonThing );
+button2.addEventListener('click', myButtonThing );
+button3.addEventListener('click', myButtonThing );
+button4.addEventListener('click', myButtonThing );
+
+var button1 = document.querySelector('#button-1')
+var button2 = document.querySelector('#button-2')
+var button3 = document.querySelector('#button-3')
+var button4 = document.querySelector('#button-4')
+
+var myButtonThing = function(event){
+
+  console.log( this.id );
+  // console.log( event.target.id );
+
+  var number = Math.random();
+  console.log("HAHAHAHA" + number);
+};
+
+button1.addEventListener('click', myButtonThing );
+button2.addEventListener('click', myButtonThing );
+button3.addEventListener('click', myButtonThing );
+button4.addEventListener('click', myButtonThing );
+
+-------------------------------------------------------------------
+
+for(let i = 0 ; i < NodeList.length; i++){
+//create Event Listener,
+
+}
+-------------------------------------------------------------------
+
+display: flex,display
+
+See which websites you can use flex on.
+
+caniuse.con/#feat-flexbox 
+
+-------------------------------------------------------------------
+
+justify-content: space-around;
+justify-content: 
+
+
+Flexbox Froggy; 
+
+flex-direction: row-reverse;
+justify-content: flex-end
+
+justify-content:
+http://flexboxfroggy.com/
+
+-------------------------------------------------------------------
+
+var box = document.createElement('div')// <div ></div>
+box.classList.add("banana")// <div class="banana"></div>
+box.innerText ="cookie" // <div class="banana"> cookie </div>
+box.style.backGround//
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+/*
+HTTP is a protocol of how data is transferred over the internet. 
+Server is where webpages are stored.
+
+*/

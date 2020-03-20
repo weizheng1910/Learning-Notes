@@ -11,3 +11,5 @@ Sublime Shortcuts
 - "Ctrl + Shift + J" then "Ctrl" and "{"to add brackets to a block of code.
 - "Ctrl + Shift + V" to paste code with the exact same indentation.
 - "Ctrl + D" show cursors of the same words. Useful to edit to make identical edits at multiple sections.
+-"Select, then Tab" to shift the tabs
+

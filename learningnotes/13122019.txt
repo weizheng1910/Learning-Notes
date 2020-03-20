@@ -1,0 +1,59 @@
+Morning Exercises: https://github.com/weizheng1910/hippy-portfolio
+
+--------------------------------------------------------------------------------------------------
+Hoisting. It doesn't matter where you define the variable. It will be hoisted to the top. 
+--------------------------------------------------------------------------------------------------
+Possible websites:
+JuniorDevSG code and tell
+engineers.sg to attends meetups
+
+Kata - train until it becomes ingrained in you
+
+Go to: codewars.com 
+
+--------------------------------------------------------------------------------------------------
+
+Learn about clean-code javascript: 
+
+github.com/ryanmcdermott/clean-code-javascript
+
+Static-site generator: Gatsby 
+
+-----------------------------------------------------------------------------------------------------
+
+Afternoon pair-exercise:
+
+github.com/wdi-sg/google-shopping-functions (Practice this) 
+
+------------------------------------------------------------------------------------------------------------
+
+Responsive Design: 
+
+Optimising for mobile first.
+
+Use Inspect to debug CSS. 
+
+Use Awesome CSS Frameworks. 
+CSS Bootstrap 
+CSS Grid 
+
+Ways to add Media Queries:
+Use- 
+1. CSS Frameworks
+2. CSS Grid
+3. Media Queries 
+
+---------------------------------------------------------------------------------------------------
+
+var announce = function() {
+  console.log('Ding!');
+}
+
+var x = setInterval(announce,100)
+console.log(x)
+setTimeout(function() {clearInterval(x);},1000);
+
+setTimeout()
+var intervalID = setInterval()
+clearInterval()
+clearTimeout()

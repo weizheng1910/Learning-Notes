@@ -42,7 +42,6 @@ Examples of Semantic Elements: <header>,<footer>,<main>,<aside>
 
 Non-semantic Elements - have names which do not clearly identify their purpose. 
 
-
 For <li>, the objects will appear side-by-side instead of being on every line. 
 
 ----------------------------

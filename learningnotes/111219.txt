@@ -1,0 +1,93 @@
+Learnt about the command line. 
+
+https://github.com/weizheng1910/command-line-murder-mystery
+
+grep -A 3 -B2 "Make: Honda" vehicles | grep -A 3 -B -2 "Color-Blue" |
+
+Use the " | " (read as pipe symbol) to continue/combine search. The pipe symbol sends the output to another as input.
+
+grep "Jeremy Bowers" Terminal_City_Library
+
+For temperature converter homework, must reject input if it is not a number. 
+
+------------------------------------------------------------------------------------------
+Given this 
+
+var employee = {
+  name : "Chee Kean",
+  wages : {
+    scheduledWeeklyHours : 40,
+    rate: 15
+  },
+  contact : {
+    phone : "87665434",
+    address : {
+      street : "259 Cantonment",
+      unit : "12-12",
+      zipcode : "2345566"
+    }
+  }
+};
+
+Both ways of accessing phone numbers: 
+
+employee["contact"]["phone"]
+employee.contact.phone
+
+Putting phone inside contact is more organised.
+
+Eg. 2
+
+var myShape = {
+  height:2,
+  width:6,
+  depth:8
+};
+
+
+var calculateSurface = function(shape1, shape2){
+  return (shape1.height + shape2.height) * ()
+};
+
+Can add in objects as parameter to show the relationship between shapes.
+
+prompt and list objects. 
+
+------
+
+var i = 20;
+
+while (i > 0) {
+
+  console.log("i is " + i);
+  i = i - 5;
+}
+
+------------------------------
+CSS
+
+Using display: inline-block
+
+use inspect to see real-time changes.
+inline-block -> allows blocks elements with specified height to stack left to right. 
+span allows you to style things in the middle of a paragraph. 
+
+
+INLINE ELEMENTS DOESNT HAVE A HEIGHT PROPERTY!!!!
+INLINE ELEMENTS HAVE NO VERTICAL MARGINS, OR PROPERTIES.
+WITH INLINE BLOCK IT IS POSSIBLE
+
+Positioning:
+
+fixed: relative to viewport.
+absolute: relative to the page. 
+
+Position an element within another element.
+Set parent element position as relative. 
+
+If you don't need absolute, you don't need relative.
+
+Default position is just static.
+
+
+

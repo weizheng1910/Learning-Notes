@@ -1,0 +1,86 @@
+Morning Exercise: https://github.com/wdi-sg/css-positioning
+
+Morning Lesson: 
+
+filter: blur(5px)
+
+Like instagram filter. 
+
+blur()
+brightness()
+contrast()
+drop-shadow()
+grayscale()
+hue-rotate()
+invert()
+opacity()
+saturate()
+sepia()
+
+------------------------------------------------------------------------------------------------------------------------
+
+Agenda:
+
+Introduction to Internet
+
+JS Ajax
+
+------------------------------------------
+
+
+http://www.example.org/hello/world/foo.html?foo=bar&baz=bat#footer
+    \___/  \_____________/ \__________________/ \_____________/ \____/
+  protocol  host/domain name        path         querystring     hash/fragment
+
+------------------------------------------
+
+HTTP (or hypertext transfer protocol) is the protocol for the way html data are transferred within a network. 
+
+A protocol is a set of conventions for behavior given a set of cirucmstances.
+ 
+------------------------------------------
+
+The Web Is a Big Collection of HTML Pages on the Internet
+
+------------------------------------------
+
+How to see all the activities your prowser does 
+
+------------------------------------------
+
+bootstrap cdn
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+console.log("hello ajax");
+
+
+
+var responseHandler = function(){
+  console.log("WOW (*$(@*#&(*&@#(*&(@#");
+};
+
+var request = new XMLHttpRequest();
+
+
+// same as:
+// element.addEventListener("click", dosomeStuff);
+request.addEventListener("load", responseHandler);
+
+// doesnt open anything
+request.open("GET", "https://swapi.co/api/people/1");
+
+request.send();
+
+-------------------------------------------------------------------------------------------------------------------------
+
+What is AJAX?
+AJAX = Asynchronous JavaScript And XML.
+
+AJAX is not a programming language.
+
+AJAX just uses a combination of:
+
+A browser built-in XMLHttpRequest object (to request data from a web server)
+JavaScript and HTML DOM (to display or use the data)

@@ -18,13 +18,12 @@ After creating a file in the repository, we have to use the command 'git add <fi
 'git add . ' OR 'git add -A' will add all of the files in the working directory into the next commit. 
 'git add <file name>' to add a file.
 
-
 -------------------------------------------------------------------------------
 git add and git commit
 
 A staging area allows you to organise yourself, a space for you to choose and finalise the files you want to commit.
 
-Its akin to a hallway where you put your bags of stuff before the movers come in and pick them up, when you are moving houses. 
+Its akin to a hallway where you put your bags of stuff before the movers come in and pick them up when you are moving houses. 
 -------------------------------------------------------------------------------
 
 Once you are ready to officially record this version of the project, type; 
@@ -34,6 +33,15 @@ $ git commit -m "created a new post.txt file"
 the -m option allows you to include a message which describes the change made to the file. 
 
 A commit ID is a 40 digit ID.
+
+'git revert <commit ID>'
+
+Creates another commit**  which revert your file back to the commit ID you specify.  
+Use gitlog to find the timeline of changes. 
+
+git checkout <commitID>
+
+Allows you to navigate between commits, and form a new branch thereafter.
 
 $ git log : allows you to view the timelime of changes.
 

@@ -118,6 +118,23 @@ h1,h2,p {
 	text-align: center;	
 }
 
+Other combinations: 
+
+For elements tag <li> with class tag of "why"
+
+li.why {
+  font-family: sans-serif;
+}
+
+For element tag <li> with id tag of "not"
+
+li#not {
+  font-family: sans-serif;
+}
+
+
+
+
 ------------------------------------------------
 
 Linking HTML and CSS 
@@ -146,4 +163,14 @@ Two ways to link images: locally or through an online image hosting website.
 <img src="images/cat.jpg">
 <img src="http://i.imgur.com/z9gGd0t.jpg" alt="Grumpy cat">
 <img src="http://i.imgur.com/z9gGd0t.jpg" alt="grumpy cat" title="grumpy cat">
+
+----------------------------------------------------------------------------------------
+
+Debugging and Diagnosis
+
+Go to browser, F12 -> Elements.
+If you see a strikethrough, it means that the property has been overwritten by another more specific stylistic instruction. 
+
+
+
 

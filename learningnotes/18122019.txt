@@ -1,0 +1,167 @@
+18122019
+
+CSS Bootstrap: 
+
+**For more example read the document. 
+
+Its a CSS template, which helps the developer to structure the design and layout of the webpage.
+
+Need to download it though. Follow instructions.
+
+
+It has predefined media queries catered to different devices.
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+----------------------------------------------------------------------------
+CSS Bootstrap splits the viewport into 12 columns 
+
+a column size could be from 1 to 12. 
+A .col-xs-7 shows a column which covers 7/12 of the viewport. 
+
+
+	.col-xs- Extra small Devices like phone
+	.col-md- Mobile and Desktop
+	.col-sm- Mobile, Tablet, Desktop
+
+
+-----------------------------------------------------------------------------
+1. Stacked to Horizontal 
+
+.col-md-* in any .row
+
+
+Resizing 
+
+<!--
+ 
+2. Columns start at 50% (6) wide on mobile(xs) and bump up to 33.3% (4) wide on desktop(md)
+
+-->
+
+
+<div class="row">
+  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+</div>
+
+--------------------------------------------------------------------------------------------------------
+
+Afternoon lessons
+
+
+Setting the style attribute of the DOM node. 
+
+para.setAttribute('style','background-colour: red')
+
+** Possible to have more than one class
+
+<p id="abc" class="badge badge-primary" style="">
+
+
+Dont keep adding and remove Event Listeners.
+
+
+------------------------------------------------------------------------------------------------------
+
+var contacts = [
+  { name: "Megatron", address: "Cybertron", coWorker : true },
+  { name: "Some guy", address: "Some street", coWorker : false },
+  { name: "Grace Hopper", address: "Arlington, Virginia", coWorker : false },
+  { name: "Ching Shih", address: "The High Seas", coWorker : false },
+  { name: "Slimer", address: "The Library", coWorker : true },
+  { name: "Umbra", address: "The Void", coWorker : false },
+  { name: "Hypatia", address: "The Neoplatonic school at Alexandria", coWorker : false },
+  { name: "Matt Huntington", address: "Remote", coWorker : false },
+  { name: "Ronald McDonald", address: "Casa del McDonalds", coWorker : true },
+  { name: "Jem", address: "Starlight Music", coWorker : true }
+];
+
+for( var i=0; i<contacts.length; i++ ){
+  var contact = contacts[i];
+  console.log( contact );
+
+  var personElement = document.createElement('div');
+
+  personElement.setAttribute("class", "person" );
+
+  var address = document.createElement('p');
+  address.innerText = contacts[i].address;
+
+  personElement.appendChild( address );
+
+  var personName = document.createElement('p');
+  personName.innerText = contacts[i].name;
+
+  personElement.appendChild( personName );
+
+  document.body.appendChild( personElement );
+
+}
+
+------------------------------------------------------------------------------
+
+Destroying and recreating the list'
+
+Or abstracting the function of creating one object.
+
+And then call it everytime you want to add it.
+
+------------------------------------------------------------------------------
+
+
+var createContact = function( contactObj ){
+
+    var personElement = document.createElement('div');
+
+    personElement.setAttribute("class", "person" );
+
+    var address = document.createElement('p');
+    address.innerText = contactObj.address;
+
+    personElement.appendChild( address );
+
+    var personName = document.createElement('p');
+    personName.innerText = contactObj.name;
+
+    personElement.appendChild( personName );
+
+    return personElement;
+
+};
+
+
+
+var createAllContacts = function(contacts){
+
+  for( var i=0; i<contacts.length; i++ ){
+    var contact = contacts[i];
+    console.log( contact );
+
+    var personElement = createContact( contact );
+
+    var container = document.querySelector('#all-contacts');
+    container.appendChild( personElement );
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

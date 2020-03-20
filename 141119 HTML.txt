@@ -49,7 +49,9 @@ Adding a hyperlink
 <a href="https://www.youtube.com/watch?v=vm32-ted2rI" target="_blank">Rock out to a demo.</a>
 
 "a" stands for anchor. An anchor tag is a way to link to another place. 
-"href" stands for hypertext reference. This is the address you are linking to. 
+"href" stands for hypertext reference. This is the address you are linking to. Not only can you put internet links, you can also add relative paths. 
+ <a href="../index.html"...</a>
+
 "target = "_blank" " tells the browser to display the destination page in a new window or tab. Leaving it out take them away from our page. 
 
 -----------------------------------------------------------------

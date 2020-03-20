@@ -1,0 +1,29 @@
+
+
+Project ideas: 
+
+1. User open 2 cards every turn 
+2. Automatically open 2 cards every turn, rush to snap if it matches.
+3. User 1 open one card, user 2 open 1 card
+
+
+
+
+4. Different stages to the game. 4*4 , 6*6 , 8* 8
+--------------------------------------------------------------------------------------
+
+
+Game states: 
+
+Input player 1 name 
+Input player 2 name 
+
+Start game 
+
+--------------------------------------------------------------------------------------
+Randomly populate new cards.
+--------------------------------------------------------------------------------------
+
+Have an array of cards, 
+
+one to 53.

@@ -1,0 +1,140 @@
+16122019
+
+Morning Exercise: https://github.com/weizheng1910/css-airbnb
+Afternoon Exercise: https://github.com/weizheng1910/fellowship-of-the-dom
+
+Reflections: 
+1. Align center, Do Margin auto. To align margin elements.
+2. Play with people's code to get a feel of how it is done.
+3. Span is a generic tag. Block 
+
+Presentation on other projects: 
+
+Linking multiple JS files. Keep main JS file at the bottom. Variables and others on top. 
+
+General Tips:
+Focus on CSS Bootstrap
+
+Morning Lesson: 
+--------------------------------------------------------------------------------------------------------
+
+JS is the only language which runs on the browser. 
+Node.js -> writing server-side code.
+
+Rendering Engine- displays content on the browser
+
+UI Interface- 
+
+HTML == DOM == CSS
+DOM is the central link between HTML and CSS??
+It takes instruction from both HTML CSS.
+
+DOM makes it interactive. HTML and CSS are static information. 
+
+
+Javascript Engine (JJSC/V8) also known as Ajax/Fetch
+
+Angular and React. 
+
+
+*****
+querySelectorAll -> selects all DOM which belongs to a certain class, or ID, and returns them in an Array. 
+
+
+------------------------------
+
+Creating an element and adding new classes to it 
+
+let newSquare = document.createElement('div')
+newSquare.classList.add('square'); // adding class="square" to newSquare
+newSquare.classList.add('red'); // adding class="red" to newSquare
+
+------------------------------
+
+Javascript Event Driven Programming
+- DOM allows changes to happen in the webpage in real time without the need to keep refreshing the whole page.
+
+var shapes = document.querySelectorAll(".circle)
+
+for (let i = 0; i < shapes.length ; i++){
+  shapes[i].classList.remove("circle")
+  shapes[i].classList.add("square")
+}
+
+By changing the class, the styling instructions is changed.  As each class has its set of instructions. 
+
+
+----------------------------------
+
+document.querySelector("#intro-to-dom").style.color
+
+querySelector returns the first element with the requested tag.
+
+document.querySelector("#intro-to-dom").style.backgroundColour
+
+----------------------------------
+
+document.body.style.colour 
+
+------------------------------------------
+
+var el = document.querySelector("div.user-panel.main input[name='login']");
+
+----------------------------------------------
+
+Why can't we use querySelector for everything?
+
+----------------------------------------------
+
+jQuery is a library, which provides functions. 
+
+---------------------------------------------------------------
+
+arrayBoxes.map( box => { return <div> {box.text} </div> } );
+
+---------------------------------------------------------------
+
+setTimeout(function(){document.querySelector(".newsletter-teaser").style.fontSize = "6px"},2000)
+
+setTimeout(function(){document.querySelector(".newsletter-teaser").style.fontSize = "6px"},2000)
+
+---------------------------------------------------------------
+
+document.body.appendChild()
+
+
+---------------------------------------------------------------
+
+Using DOM for chat messages
+
+---------------------------------------------------------------
+
+Coding is the last thing you do. Plan properly. 
+
+---------------------------------------------------------------
+
+append()
+
+insertBefore() => insert before a specified element. 
+
+---------------------------------------------------------------
+
+When doing DOM manipulation, it is important for the script.js to be at the bottom.
+Since HTML loads from top to bottom. **
+
+UNLESS all your script.js code is inside here:
+
+document.addEventListener('DOMContentLoaded',function(){
+  // all yur code goes here
+});
+
+
+---------------------------------------------------------------
+
+
+
+
+
+
+
+

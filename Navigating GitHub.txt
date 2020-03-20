@@ -1,0 +1,28 @@
+//
+git log shows the commits of the current branch.
+git log -1 shows which branch you are currently at. 
+
+use git checkout to navigate between commits. 
+You can checkout onto a new branch: git checkout <new branch> 
+Or checkout onto a new commit: git checkout <commit id> 
+
+when you work on a commit which has commits ahead of it, you have to create a new branch to save the commit. 
+
+HEAD is a reference to your current commit. 
+
+
+Shows all your history and your current branches:
+**
+git log --oneline --decorate --graph --all
+
+Create new branch: git branch <name>
+Create new branch and switch to that branch at the same time: git checkout -b <newbranchname>.
+
+Creates a new branch with the commit id specified as the latest commit.git 
+git branch <branch name> <commit id> 
+
+** git revert undo and adds a new commit. 
+
+
+
+

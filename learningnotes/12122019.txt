@@ -1,0 +1,44 @@
+
+Things to do:
+
+Morning Exercise: 
+
+Do CSS-IOS Index : https://github.com/wdi-sg/css-ios
+Reflections: Think box within a box. 
+
+What I've learned: 
+
+Javascript - `$()` Learn about Template Literals. 
+
+Tips: 
+
+1. Learn to formulate your questions. Rubber duck coding. Talk to a rubber duck. 
+2. Implement deliberate practice. 
+3. Organise your mental workspace. ** Be neat. 
+4. Get used to being in a constant state of failure. 
+5. Max Stuck Time 3 hours 
+
+---------------------------------------------------------
+
+CSS
+
+Think of box within a box. Use divs to organise images properly. 
+It is okay for absolute within a absolute. 
+
+Using text-align to line up text boxes within a content.
+
+----------------------------------------------------------------
+
+Debugging
+
+Bring up chrome dev tools, go to sources. 
+Click on the line number, to choose where you want the code to run until. 
+
+Alternatively, 
+
+You can add the "debugger" into the script. 
+
+ 
+
+
+

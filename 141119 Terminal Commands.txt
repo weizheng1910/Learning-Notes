@@ -11,6 +11,8 @@ test\ folder
 
 Many commands consist of 3 parts: the command, followed by flags(or options), and finally arguments.
 
+Use TAB key to autocomplete!!!!
+
 For example: 
 
 $ ls -a 
@@ -71,7 +73,40 @@ $ cp -r World/ ~
 
 Copying the World/ directory from the Downloads folder to the Home directory.
 
+**-r is used to remove a directory
+
 Use '-r' if you want to copy, move or remove a folder with contents within it. 
+
+$ cat
+
+Allows you to view contents of the file in the terminal. 
+
+Moving multiple files. 
+
+touch index.html script.js
+
+--------------------------------
+Useful tip for navigation: 
+
+Going back to the parent directory of the current directory you are in. 
+
+../index.html
+
+
+--------------------------------
+
+Pair programming.
+
+Driver - the person typing the code, concerns himself with syntax,
+
+Navigator - Coming up with the pseudocode. Thinking of  
+
+() parentheses;
+{} curly braces; 
+
+if(bagweight > 50) 
+if(badweight > 8)  
+Since code runs top down,  the code will work  like -> 8 < bagweight < 50 
 
 
 
