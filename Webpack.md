@@ -4,7 +4,7 @@ Webpack is a module bundler. It resolves dependencies between different files, b
 
 ## Webpack and React
 
-Webpack can be used to organise React components by allowing each of them to be written in a different file, and be executed smoothly and seamlessly by bundling them together and loading them as a single file.
+When using React, Webpack is *necessary* to organise React components by allowing each of them to be written in a different file, and be executed smoothly by bundling them together and loading them as a single file.
 
 ## How it works 
 Webpack has a config file `webpack.config.js` which defines the following:
@@ -34,9 +34,9 @@ To do so, we need a loader. Loaders are interfaces Webpack use to deal with cont
 Example:</br>
 Babel converts ES6 JS syntax into ES5. Webpack can use the Babel-loader to process code written in ES6.
 #### Plugins 
-Plugins perform a wider range of task. E.g. `html-webpack-plugin` creates a HTML file by with all your generated bundles.
-Or the extractTextPlugin extract modules into a specified file. 
-
+Plugins perform a wider range of task. E.g. 
+* `html-webpack-plugin` creates a HTML file by with all your generated bundles.
+* extractTextPlugin (DEPRECTATED) extract modules into a specified file. 
 
 ```
 const path = require('path');
