@@ -1,0 +1,8 @@
+UseRef provide a way to access DOM nodes or React Elements. 
+UseRef can be used to keep track of the state of a person's weight. 
+
+Instead of using document.query.something, use UseRef to refer to a component..
+
+https://dev.to/dinhhuyams/introduction-to-useref-hook-3m7n
+
+Redux stores the state of your app. 
