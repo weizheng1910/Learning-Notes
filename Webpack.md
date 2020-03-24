@@ -23,7 +23,7 @@ path.resolve is a Node.js function which forms an absolute path from concatenati
 
 ### Other file types 
 Webpack can bundle other file types as well, but they need to be converted into a language Webpack understands, which is ES5 Javascript.
-To do so, we need a loader. Loaders are interfaces Webpack uses to deal with content which are not ES5.
+To do so, we need a loader. Loaders are interfaces Webpack use to deal with content which are not ES5.
 
 Babel converts ES6 JS syntax into ES5. Webpack can use the Babel-loader to process code written in ES6.
 
