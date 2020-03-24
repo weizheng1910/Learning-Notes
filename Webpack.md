@@ -2,6 +2,9 @@
 ## What is Webpack
 Webpack is a module bundler. It resolves code dependencies in the different files, by converting them into modules, and then executing them at the right time in the correct scope. 
 
+## Webpack and React
+
+Webpack can be used to organise React components by allowing each of them to be written in a different file, and be executed smoothly and seamlessly by bundling them together and loading them as a single file.
 
 ## 
 ``` javascript 
