@@ -14,7 +14,7 @@ Webpack has a config file `webpack.config.js` which defines the following:
 * plugins
 
 ##### Entry 
-entry is the main entry point of the application, starting point of the dependency graph charted by webpack. 
+entry is the main entry point of the application, the starting point from which the dependencies extend from. 
 ##### Output
 output is the resulting bundle, conventionally named `bundle.js`. In most cases, the output file is loaded as a `<script>` in the html to be rendered.
 ##### Loaders
