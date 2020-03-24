@@ -4,7 +4,7 @@ Webpack is a module bundler. It resolves dependencies between different files, b
 
 ## Webpack and React
 
-When using React, Webpack is *necessary* to organise React components by allowing each of them to be written in a different file, and be executed smoothly by bundling them together and loading them as a single file.
+When using React, Webpack is *necessary* to organise React components by allowing each of the components to be written in a different file, and be executed smoothly by bundling them together and loading them as a single file.
 
 ## How it works 
 Webpack has a config file `webpack.config.js` which defines the following:
@@ -13,17 +13,6 @@ Webpack has a config file `webpack.config.js` which defines the following:
 * loaders
 * plugins
 
-``` javascript 
-var path = require('path');
-module.exports = {
-    entry: './src/index.js',
-    output: {
-        path: path.resolve(__dirname, './dist/),
-        filename: 'bundle.js
-    }
-}
-
-```
 ##### Entry 
 entry is the main entry point of the application, starting point of the dependency graph charted by webpack. 
 ##### Output
@@ -38,33 +27,7 @@ Plugins perform a wider range of task. E.g.
 * `html-webpack-plugin` creates a HTML file by with all your generated bundles.
 * extractTextPlugin (DEPRECTATED) extract modules into a specified file. 
 
-```
-const path = require('path');
-module.exports = {
-    entry: './src/index.js',
-    output: {
-        path: path.resolve(__dirname, './dist/'),
-        filename: 'bundle.js'
-    },
-    module: {
-        loaders: [
-            {
-                test: /\.js$/,
-                loader: 'babel-loader',
-                exclude: /node_modules/,
-                query: {
-                    presets: ['es2015']
-                }
-            }
-        ]
-    }
-};
-
-
-```
-
-
-
+Below is a `webpack.config.js` file
 ``` javascript
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
