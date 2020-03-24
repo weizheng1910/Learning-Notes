@@ -18,10 +18,10 @@ entry is the main entry point of the application, the starting point from which 
 ##### Output
 output is the resulting bundle, conventionally named `bundle.js`. In most cases, the output file is loaded as a `<script>` in the html to be rendered.
 ##### Loaders
-Webpack can bundle other file types as well, but they need to be converted into a language Webpack understands, which is ES5 Javascript.
-To do so, we need a loader. Loaders are interfaces Webpack use to deal with content which are not ES5.
+Webpack can bundle other file types as well, but they need to be converted into ES5 JS, the language Webpack understands.
+To do so, we need loaders, which are interfaces Webpack uses to deal with content which are not ES5.
 Example:</br>
-Babel converts ES6 JS syntax into ES5. Webpack can use the Babel-loader to process code written in ES6.
+Babel converts ES6 JS syntax into ES5. Webpack uses the Babel-loader to process code written in ES6.
 #### Plugins 
 Plugins perform a wider range of task. E.g. 
 * `html-webpack-plugin` creates a HTML file by with all your generated bundles.
