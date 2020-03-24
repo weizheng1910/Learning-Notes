@@ -1,12 +1,18 @@
 
 ## What is Webpack
-Webpack is a module bundler. It resolves code dependencies in the different files, by converting them into modules, and then executing them at the right time in the correct scope. 
+Webpack is a module bundler. It resolves dependencies between different files, by converting them into modules, and then executing them at the right time in the correct scope. 
 
 ## Webpack and React
 
 Webpack can be used to organise React components by allowing each of them to be written in a different file, and be executed smoothly and seamlessly by bundling them together and loading them as a single file.
 
-## 
+## How it works 
+Webpack has a config file `webpack.config.js` which defines the following:
+* entry point
+* output
+* loaders
+* plugins
+
 ``` javascript 
 var path = require('path');
 module.exports = {
@@ -18,17 +24,19 @@ module.exports = {
 }
 
 ```
-entry is the main entry point of the application, where all initial loading and dependency logic is at. It is normally named index.js
-
-output is the resulting bundle, conventionally named bundle.js
-
-path.resolve is a Node.js function which forms an absolute path from concatenating the arguments from right to left. 
-
-### Other file types 
+##### Entry 
+entry is the main entry point of the application, starting point of the dependency graph charted by webpack. 
+##### Output
+output is the resulting bundle, conventionally named `bundle.js`. In most cases, the output file is loaded as a `<script>` in the html to be rendered.
+##### Loaders
 Webpack can bundle other file types as well, but they need to be converted into a language Webpack understands, which is ES5 Javascript.
 To do so, we need a loader. Loaders are interfaces Webpack use to deal with content which are not ES5.
-
+Example:</br>
 Babel converts ES6 JS syntax into ES5. Webpack can use the Babel-loader to process code written in ES6.
+#### Plugins 
+Plugins perform a wider range of task. E.g. `html-webpack-plugin` creates a HTML file by with all your generated bundles.
+Or the extractTextPlugin extract modules into a specified file. 
+
 
 ```
 const path = require('path');
