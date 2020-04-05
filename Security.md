@@ -7,7 +7,7 @@ Anything that is submitted by the user is potentially dangerous, hence there is 
 Validation can be classified into 2 kinds, blacklist and whitelist
 
 ##### Blacklist Validation
-Blacklist validation is coming up with the different ways a input shouldn't be like. This is a very inefficient way of coming up with validation; there are always more ways to do something wrongly than to do something correctly. We can think of all the SQL queries which are potentially harmful, but the next day someone can always think another one we have not thought of.
+Blacklist validation is coming up with the different ways a input shouldn't be like. This is a very inefficient way of coming up with validation; there are always more ways to do something wrongly than to do something correctly. We can think of all the SQL queries which are potentially harmful, but the next day someone can always think of another one we have not thought of.
 
 
 ##### Whitelist Validation
