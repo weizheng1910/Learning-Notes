@@ -11,8 +11,8 @@ Blacklist validation is coming up with the different ways a input shouldn't be l
 
 
 ##### Whitelist Validation
-Whitelist validation is coming up with the correct input format. The best way to implement whitelist validation is through 
-Regular Expressions, or Regex, when the logic to validate an input is complex, e.g. an email address.
+Whitelist validation is coming up with a list of how correct input should be like. The best way to implement whitelist validation is through 
+Regular Expressions, or Regex, when the logic of validating an input is complex, e.g. an email address.
 Tried and tested Regex can be found in regexlib.com.
 
 ** 
