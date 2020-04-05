@@ -22,4 +22,4 @@ Having said that client side validation is still good practice as it prevents un
 
 
 #### Attack Surface Reduction
-In an application, an attack surface is all the code and functionalities which an untrusted user can potentially exploit. Every feature we develop for our users is just a new means for an attacker to harm the application. Thus we shouldn't unnecessarily build features, and limit them to the ones the users really need, providing them with the option to opt-in should they really need them.
+In an application, an attack surface is all the code and functionalities which an untrusted user can potentially attack. Every feature we develop for our users is just another means for an attacker to compromise the application. Thus we shouldn't unnecessarily build features, and limit them to the ones the users really need, providing them with the option to opt-in on the restricted features should they really need them.
