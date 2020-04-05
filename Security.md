@@ -7,9 +7,18 @@ Anything that is submitted by the user is potentially dangerous, hence there is 
 Validation can be classified into 2 kinds, blacklist and whitelist
 
 ##### Blacklist Validation
-Blacklist validation is coming up with the different ways a input shouldn't be like. This is a very inefficient way of coming up with validation; there are always more ways to do something wrongly than to do something correctly.
+Blacklist validation is coming up with the different ways a input shouldn't be like. This is a very inefficient way of coming up with validation; there are always more ways to do something wrongly than to do something correctly. We can think of all the SQL queries which are potentially harmful, but the next day someone can always think another one we have not thought of.
 
-#### Whitelist Validation
+
+##### Whitelist Validation
+Whitelist validation is coming up with the correct input format. The best way to implement whitelist validation is through 
+Regular Expressions, or Regex, when the logic to validate an input is complex, e.g. an email address.
+Tried and tested Regex can be found in regexlib.com.
+
+** 
+It is not enough to build just validation logic for the client-side. After all, the browser is just an interface through which HTTP requests are sent and received. Someone can always craft a HTTP requests ( or even intercept and modify a request on its way to the server)
+
+Having said that client side validation is still good practice as it prevents unnecessary error throwbacks from the server which will waste a user's time.
 
 
 #### Attack Surface Reduction
