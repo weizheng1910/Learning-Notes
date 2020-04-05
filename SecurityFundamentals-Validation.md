@@ -1,7 +1,7 @@
 ## Security Fundamentals
 
 ### Input Validation
-Anything that is submitted by the user is potentially dangerous, hence there is a need to validate the user's input. Its format has to be explicitly defined so that there is no room for it to be malicious. An example of a malicious input will be an SQL injection attack, where an SQL query is inputted and gets piggybacked on top of the database query which follows the RESTful route.
+Anything that is submitted by the user is potentially dangerous, hence there is a need to validate the user's input. Its format has to be explicitly defined so that there is no room for it to be malicious. An example of a malicious input will be an SQL injection attack, where an SQL query is inputted and gets piggybacked on top of the database query following the RESTful route.
 
 #### Types of Validation
 Validation can be classified into 2 kinds, blacklist and whitelist
