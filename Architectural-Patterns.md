@@ -2,6 +2,13 @@
 
 A microservices architecture is organised such that there is a main UI through which the user can access the separate 'microservices'. Each microservice is an application on its own which can be deployed and developed independently from each other (as a result making it easier to modify and update) . HTTP REST is one of the many ways communication between microservices could be made, other ways include service discovery and messaging.
 
+Benefits to Microservices include:
+* Focus on building the functionality of each microservice rather than worrying on how the code should fit into the app. 
+* More flexibility, as each microservice can be written with a different tech stack. 
+
+Drawbacks include:
+* Hard to debug, as a user action can go through many microservices and it can be hard to pinpoint where the action fails.
+
 ### Monolithic
 
 A monolithic pattern is a single-tiered application, where its multiple components are combined and deployed on one platform. 
