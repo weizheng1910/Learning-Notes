@@ -1,6 +1,16 @@
-### Monolithic Vs Microservices
+### Microservices
 
-A microservices architecture is where there is an user interface through which API calls can be made to separate 'microservices'. Each microservice is an application on its own which can be deployed and developed independently from each other (as a result making it easier to modify and update) . HTTP REST is one of the many ways communication between microservices could be made, other ways include service discovery and messaging.
+A microservices architecture is organised such that API calls can be made (through the UI) to separate 'microservices'. Each microservice is an application on its own which can be deployed and developed independently from each other (as a result making it easier to modify and update) . HTTP REST is one of the many ways communication between microservices could be made, other ways include service discovery and messaging.
 
+### Monolithic
+
+A monolithic pattern is a single-tiered application, where its multiple components are combined and deployed on one platform. 
+An application developed monolithically is easier to:
+* Build initially, as there is only one place to work on. 
+* Scale Horizonally, by duplicating the application on multiple servers and using a load balancer to redistribute network traffic.
+But its drawback is 
+* Hard to modify and maintain when the application gets too big,
+* Long application start up time
+* Relying on a single tech stack of a certain version
 
 
