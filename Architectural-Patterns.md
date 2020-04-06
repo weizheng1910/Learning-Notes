@@ -21,4 +21,5 @@ But its drawback is
 * Long application start up time
 * Relying on a single tech stack of a certain version
 
-#### Docker and Kubernetes
+### Docker
+In recent years, there has been a paradigm shift towards microservices in software architecture. Docker facilitates the deployment and management of microservices. Docker is also mainly used to address the discrepancy between the development environment and the production environment. Because of different operating systems, libraries, and dependencies, a developer might run into issue when transferring his code to production. Containers resolve this issue by providing a common environment for development and production.
