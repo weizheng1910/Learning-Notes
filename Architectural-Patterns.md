@@ -7,7 +7,8 @@ A microservices architecture is organised such that API calls can be made (throu
 A monolithic pattern is a single-tiered application, where its multiple components are combined and deployed on one platform. 
 An application developed monolithically is easier to:
 * Build initially, as there is only one place to work on. 
-* Scale Horizonally, by duplicating the application on multiple servers and using a load balancer to redistribute network traffic.
+* Scale Horizonally, by duplicating the application on multiple servers and using a load balancer to redistribute network traffic.</br>
+
 But its drawback is 
 * Hard to modify and maintain when the application gets too big,
 * Long application start up time
