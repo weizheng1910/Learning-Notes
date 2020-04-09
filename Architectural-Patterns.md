@@ -14,7 +14,7 @@ Drawbacks include:
 
 A monolithic pattern is a single-tiered application, where its multiple components are combined and deployed on one platform. 
 An application developed monolithically is easier to:
-* Build initially, as there is only one place to work on. 
+* Build initially, as there is only one main application to be developed on.
 * Scale Horizonally, by duplicating the application on multiple servers and using a load balancer to redistribute network traffic.</br>
 
 But its drawback is 
