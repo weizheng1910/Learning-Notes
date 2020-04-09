@@ -55,6 +55,14 @@ Examples of reverse proxies, load balancers.
 ### Load Balancers
 Distribute load across multiple servers.
 
+### Database
+
+#### Relational Database
+ACID
+
+#### Non-Relational Database
+BaSE
+
 
 
 
