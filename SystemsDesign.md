@@ -37,7 +37,25 @@ If there are many servers in the system, the systems throughput is as much as it
 But a smarter way will be splitting the requests among other resources.
 
 ### System Avaliablity
-This is a measurement of how much uptime the system is running, or how little downtime the system encounters.
+This is a measurement of how much uptime a system has. </br>
+99.99% uptime might sound impressive, but it means 3.5 days of downtime in a year, which is bad for service providers like Netflix.</br> Most services aim for a SA of 99.999 which is a little over 5mins of downtime per year.</br>
+To ensure a system which is highly availlable, single points of failure(POF) have to be eliminated.
+POFs can be eliminated by introducing a backup server to the service, in case the original one breaks down, but this could be costly, and wasteful if the backup was seldom used.
+Thus engineers has to decide if the breakdown of the service is tolerable, and if a purchase of a backup is warranted.
+
+### Proxies
+A client can send a request to a server via a proxy.
+The proxy may sometimes hide the identity of the client from the server, as the IP address in the request may be the proxy's and not the client's. 
+A proxy which takes over a request from a client is a forward proxy,
+and one which takes over a request from a server is a reverse proxy.
+
+Examples of forward proxies, VPN
+Examples of reverse proxies, load balancers.
+
+### Load Balancers
+Distribute load across multiple servers.
+
+
 
 
 
