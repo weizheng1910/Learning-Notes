@@ -1,7 +1,7 @@
 ## Security Fundamentals
 
 ### Input Validation
-Anything that is submitted by the user is potentially dangerous, hence there is a need to validate them. Thus, the format of an input has to be explicitly defined such that it can do no harm to the application. An example of a malicious input will be an SQL injection attack, where an attacker intentionally input a destructive SQL query to ruin the database or steal information from it. 
+Anything that is submitted by the user should be considered potentially dangerous. An attacker can intentionally input a destructive SQL query to ruin the database or steal information from it. Hence there is a need to validate the user's input - by explicitly defining its format such that it can do no harm to the application. 
 
 #### Types of Validation
 Validation can be classified into 2 kinds, blacklist and whitelist
