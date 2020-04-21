@@ -81,15 +81,37 @@ Distribute load across multiple servers.
 #### Database partitioning 
 ##### Vertical partitioning
 - Splitting up a table into smaller, relational ones.
-  - A database table of people with the attributes name, race, and marital status can be split into 3 tables.
-    - The main table, will contain the 3 attributes, but 2 attributes: race and marital status, will be represented by an id. 
-    - The other two tables will contains the mapping to the actual attribute wordings
+  - A database table of people with the attributes: name, race, and marital status can be split into 3 tables.
+    - The main table, will contain all 3 attributes, but 2 attributes: race and marital status, will be represented by an integer id. 
+    - The other two tables will contains the mapping to the actual wordings.
   
 ##### Horizontal partitioning 
 - Splitting the table horizontally 
   - A database table of soccer players, with attributes like their height and weight can be split into smaller tables according to their race, for example.
-- Splitting the table vertically
-  - A database table of 
+  - The partitioning can be visualised by cutting a database table horizontally.
+  - Referring to the current example, if we wanted to query for soccer players above a certain height, we will have to make numerous queries, a query for each of the smaller tables, compared to only a single query we need to make if we have not partitioned the database.
+  - Schema change will inevitably be more tedious compared to a single table.
+  
+#### Database replication 
+Making replicas of your database to avoid single points of failure.
+##### Single Primary Replication
+Only allow both write and read requests on the primary database - the other databases can only process read requests.
+The primary database updates the other databases after processing the write requests.
+Drawbacks: 
+Timelag before the other databases gets updated.
+Write requests bottleneck.
+
+##### Multiple Primary Replication
+All databases acts as primary databases, where they are able to process both read and write requests.
+Drawbacks:
+When two databases registers a new user at the same time, there will be primary id conflict. Rules have to be established to manage these concurrent updates.
+
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 
 #### Relational Database
