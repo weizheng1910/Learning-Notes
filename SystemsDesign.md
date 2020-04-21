@@ -35,7 +35,7 @@ In system designs there are certain trade-offs which needs to be weighed - to av
 * As a server is a finite machine, there is only so many user requests it can process per unit time.
 * Knowing the maximum capacity of a server will allow us to know its breaking point, and together with other factors, e.g. the amount of network traffic, we will be able to make an informed decision regarding the system design.
 * The act of measuring the maximum capacity of a server is called benchmarking.
-If there are many servers in the system, the systems throughput is as much as its bottleneck, the server with the lowest processing capacity. Throughput can be increased through horizontal scaling - the buying of more hardware, or vertical scaling - the improvment of existing hardware.</br>
+If there are many servers in the system, the systems throughput is as much as its bottleneck, the server with the lowest processing capacity. Throughput can be increased through horizontal scaling - the buying of multiple hardware, or vertical scaling - the improvment of existing hardware.</br>
 * Alternatively we could distribute incoming user requests evenly using a load-balancer.
 
 #### Load Balancers and its algorithm
