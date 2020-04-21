@@ -48,19 +48,16 @@ If there are many servers in the system, the systems throughput is as much as it
   - Assigning a request to the sever with the fewest connection.
   - Number of requests might not to be a good proxy of the server load, though there might be fewer user requests, each requests might demand greater computational power. 
   - Computational energy is also required to monitor the servers.
-- Session aware load-balancing
+- Session aware load-balancing (Sticky sessions)
   -If the same user makes another request to the page, but its request has to be handled by the server which handled his previous request, or his session data will be lost.
   -Cookie is used to keep track of the server which has handled the user's request.
-  -There are plenty of workarounds to this - instead of storing session data in the server, we can store it in the database or with the client.
+  -If a server crashes, then for the users whose requests are handled by the server, their data will be lost.
+  -There are plenty of workarounds to this - instead of storing session data in the server, we can store it in the database or save it with the client.
 
 #### Autoscaling
-  - Server traffic varies with the time of the day or the period of the year. During peak period, we might need 5 servers to handle the traffic, but during lull period, we might only need one, leaving 4 servers unused.
+  - Server traffic varies with the time of the day or the period of the year. During peak periods, we might need 5 servers to handle the traffic, but during lull period, we might only need one, leaving 4 servers unused.
   - AWS offers autoscaling services, which adjusts the number of servers allocated to the application owner, according to server traffic. This allows the application owner to get the additional resources only when it is needed, thus optimising the usage of its servers and lowering operating cost.
   
-
-  
-
-
 ### System Avaliablity
 This is a measurement of how much uptime a system has. </br>
 99.99% uptime might sound impressive, but it means 3.5 days of downtime in a year, which is bad for service providers like Netflix.</br> Most services aim for a SA of 99.999 which is a little over 5mins of downtime per year.</br>
@@ -80,7 +77,20 @@ Examples of reverse proxies, load balancers.
 ### Load Balancers
 Distribute load across multiple servers.
 
-### Database
+### Database scalability
+#### Database partitioning 
+##### Vertical partitioning
+- Splitting up a table into smaller, relational ones.
+  - A database table of people with the attributes name, race, and marital status can be split into 3 tables.
+    - The main table, will contain the 3 attributes, but 2 attributes: race and marital status, will be represented by an id. 
+    - The other two tables will contains the mapping to the actual attribute wordings
+  
+##### Horizontal partitioning 
+- Splitting the table horizontally 
+  - A database table of soccer players, with attributes like their height and weight can be split into smaller tables according to their race, for example.
+- Splitting the table vertically
+  - A database table of 
+
 
 #### Relational Database
 ACID
