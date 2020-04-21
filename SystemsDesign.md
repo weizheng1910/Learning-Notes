@@ -32,9 +32,22 @@ Simply the time taken to do something. In the context of a web application, it i
 In system designs there are certain trade-offs which needs to be weighed - to avoid retrieving data from distant servers, we might choose to store things in memory, but storing things in memory might not be feasible as well. 
 
 ### Throughput 
-Maximum capacity of a server, measured in bits per second.
+* As a server is a finite machine, there is only so many user requests it can process per unit time.
+* Knowing the maximum capacity of a server will allow us to know its breaking point, and together with other factors, e.g. the amount of network traffic, we will be able to make an informed decision regarding the system design.
+* The act of measuring the maximum capacity of a server is called benchmarking.
 If there are many servers in the system, the systems throughput is as much as its bottleneck, the server with the lowest processing capacity. Throughput can be increased through horizontal scaling - the buying of more hardware, or vertical scaling - the improvment of existing hardware.</br>
-But a smarter way will be splitting the requests among other resources.
+* Alternatively we could distribute incoming user requests evenly using a load-balancer.
+
+#### Load Balancers and its algorithm
+* A load balancer can distribute network traffic in mainly 3 ways:
+- Round Robining
+  - Cycling through the servers as it receives the requests, i.e. If there are 3 servers, first request goes to server 1, the second to server 2, and the third to server 3 and fourth back to server 1 again, and so on.
+- Random choice
+  - Assigning requests to the servers randomly.
+- Fewest Connection
+  - Assigning a request to the sever with the fewest connection.
+
+
 
 ### System Avaliablity
 This is a measurement of how much uptime a system has. </br>
