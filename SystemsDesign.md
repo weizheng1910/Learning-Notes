@@ -77,6 +77,34 @@ Examples of reverse proxies, load balancers.
 ### Load Balancers
 Distribute load across multiple servers.
 
+### Caching 
+We can define the caching policy via the Cache-Control HTTP header.
+Indications:
+| no-cache      | no-store           | 
+| ------------- |:-------------:| 
+| col 3 is      | right-aligned | 
+| col 2 is      | centered      |  
+| zebra stripes | are neat      |   
+Cache-control: max-age
+Etag: 
+
+Allows you to make a request for a new
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Database scalability
 #### Database partitioning 
 ##### Vertical partitioning
