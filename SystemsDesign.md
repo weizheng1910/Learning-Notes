@@ -46,7 +46,19 @@ If there are many servers in the system, the systems throughput is as much as it
   - Assigning requests to the servers randomly.
 - Fewest Connection
   - Assigning a request to the sever with the fewest connection.
+  - Number of requests might not to be a good proxy of the server load, though there might be fewer user requests, each requests might demand greater computational power. 
+  - Computational energy is also required to monitor the servers.
+- Session aware load-balancing
+  -If the same user makes another request to the page, but its request has to be handled by the server which handled his previous request, or his session data will be lost.
+  -Cookie is used to keep track of the server which has handled the user's request.
+  -There are plenty of workarounds to this - instead of storing session data in the server, we can store it in the database or with the client.
 
+#### Autoscaling
+  - Server traffic varies with the time of the day or the period of the year. During peak period, we might need 5 servers to handle the traffic, but during lull period, we might only need one, leaving 4 servers unused.
+  - AWS offers autoscaling services, which adjusts the number of servers allocated to the application owner, according to server traffic. This allows the application owner to get the additional resources only when it is needed, thus optimising the usage of its servers and lowering operating cost.
+  
+
+  
 
 
 ### System Avaliablity
