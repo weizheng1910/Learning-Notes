@@ -88,11 +88,21 @@ Indications:
 | ------------- |:-------------:| 
 |Can only be stored in the user's browser, meant for sensitve user-data | Can be cached by browser or intermdeiate cahces
 
+** Intermediate caches, are caches like content delivery networks(CDN) which offers caching services for the web application's end users.
+
+#### E-tags
+* If the resource has not changed even after the cache has expired, then the cached response can still be used. 
+* E-tags are arbitrary tokens which tracks the version of the resource. 
+* When a client makes a request, it includes the Etag it previously received in the request header.
+* The server checks the Etag token, and the token hasn't been changed, 304 status code is sent back to the client. 
+* The client then gets the resource from the cache, and resets the expiry duration.
+
+##### Making new updates before cache expires
+* A cache response is considered valid until it expires. If an application owner made an update to the resource, its end users will not receive the update if their cache response have not expired. To go around this, the application owner can rename its file so that the client interprets it as a new request which hasn't been previously made. 
+
+  
 
 
-Intermediate caches, are caches like content delivery networks(CDN) which offers caching services for the web application's end users.  
-
-Allows you to make a request for a new
 
 
 
