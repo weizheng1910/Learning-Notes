@@ -19,6 +19,15 @@ As it is built on top of IP, this protocol is also known as TCP/IP.
 #### HTTP 
 Known as the HyperText Transfer Protocol, the HTTP is built on top TCP/IP. HTTP introdues the request-response pattern, which is the response cycle between a client and a server.
 
+##### HTTPS 
+HTTPS is a secured version of the HTTP. Trasmitted data are encrypted using the public-private key encryption. The encryption by the public key can only be decrypted by the private key.
+1. Receiver is to receive data from the Sender.
+2. The Receiver generates the public-private key pair, and sends the public key over to the Sender
+3. The sender uses the public key to encrypt the data.
+4. The sender then sends the encrypted data over to the receiver.
+5. The receiver receives the data and decrypts it using the private key.
+** The only way to decrypt the data is using the private key, which is safe with the receiver and not exposed over the network. Thus the encrypted data could be considered secure.
+
 ### Storage
 
 #### Disk VS Memory
