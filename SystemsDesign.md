@@ -92,7 +92,7 @@ Indications:
 
 #### E-tags
 * If the resource has not changed even after the cache has expired, then the cached response can still be used. 
-* E-tags are arbitrary tokens which tracks the version of the resource. 
+* E-tags are arbitrary tokens which tracks the version of the resource, allowing the client to use the cached response though it has been expired.
 * When a client makes a request, it includes the Etag it previously received in the request header.
 * The server checks the Etag token, and the token hasn't been changed, 304 status code is sent back to the client. 
 * The client then gets the resource from the cache, and resets the expiry duration.
