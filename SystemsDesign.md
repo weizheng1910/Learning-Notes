@@ -88,9 +88,7 @@ Indications:
 | ------------- |:-------------:| 
 |Can only be stored in the user's browser, meant for sensitve user-data | Can be cached by browser or intermdeiate cahces
 
-| col 2 is      | centered      |  
-| zebra stripes | are neat      |   
-Cache-control: max-age
+
 
 Intermediate caches, are caches like content delivery networks(CDN) which offers caching services for the web application's end users.  
 
