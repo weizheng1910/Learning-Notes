@@ -98,7 +98,7 @@ Indications:
 * The client then gets the resource from the cache, and resets the expiry duration.
 
 ##### Making new updates before cache expires
-* A cache response is considered valid until it expires. If an application owner made an update to the resource, its end users will not receive the update if their cache response have not expired. To go around this, the application owner can rename its file so that the client interprets it as a new request which hasn't been previously made. 
+* A cache response is considered valid until it expires. If an application owner made an update to the resource, its end users wwould not receive the update if their cache response have not expired. To go around this, the application owner can rename its file so that the client interprets it as a new request which hasn't been previously made. 
 
   
 
