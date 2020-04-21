@@ -107,11 +107,7 @@ Drawbacks:
 When two databases registers a new user at the same time, there will be primary id conflict. Rules have to be established to manage these concurrent updates.
 
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+
 
 
 #### Relational Database
