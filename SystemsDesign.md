@@ -163,9 +163,20 @@ When two databases register a new user at the same time, there will be primary i
 
 #### Relational Database
 ACID
+- Atomicity 
+  - All or Nothing. Either the whole series of database operations happen or they don't.
+  - This ensures that the database at any point in time remains valid
+- Consistency
+  - Data is correct at any point in time. Abiding by 
+- Isolation
+  - 
+- Durability
+  - Every transaction with the database should be permanently recorded.
 
 #### Non-Relational Database
-BaSE
+Ba - Basically available
+S - Soft State 
+E - Eventual Consistency
 
 
 
