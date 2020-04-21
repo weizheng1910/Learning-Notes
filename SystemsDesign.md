@@ -153,9 +153,9 @@ Timelag before the other databases gets updated.
 Write requests bottleneck.
 
 ##### Multiple Primary Replication
-All databases acts as primary databases, where they are able to process both read and write requests.
+All databases act as primary databases, which can process both read and write requests.
 Drawbacks:
-When two databases registers a new user at the same time, there will be primary id conflict. Rules have to be established to manage these concurrent updates.
+When two databases register a new user at the same time, there will be primary id conflict. Rules have to be established to manage these concurrent updates.
 
 
 
