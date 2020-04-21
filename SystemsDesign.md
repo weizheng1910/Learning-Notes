@@ -80,13 +80,19 @@ Distribute load across multiple servers.
 ### Caching 
 We can define the caching policy via the Cache-Control HTTP header.
 Indications:
-| no-cache      | no-store           | 
+| no-cache      | no-store      | 
 | ------------- |:-------------:| 
-| col 3 is      | right-aligned | 
+|Always validate if response has been changed, using the Etag. Used cached response if resource has not changed| Always download full response, ignore validation.  | 
+
+| private    | public      | 
+| ------------- |:-------------:| 
+|Can only be stored in the user's browser, meant for sensitve user-data | Can be cached by browser or intermdeiate cahces
+
 | col 2 is      | centered      |  
 | zebra stripes | are neat      |   
 Cache-control: max-age
-Etag: 
+
+Intermediate caches, are caches like content delivery networks(CDN) which offers caching services for the web application's end users.  
 
 Allows you to make a request for a new
 
