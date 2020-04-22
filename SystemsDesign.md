@@ -167,9 +167,9 @@ ACID
   - All or Nothing. Either the whole series of database operations happen or they don't.
   - This ensures that the database at any point in time remains valid
 - Consistency
-  - Data is correct at any point in time. Abiding by 
+  - Database abides by all constraints at any point in time. e.g. In the context of a bank's database, the amount in a bank account should not be negative, and the total amount of cash between both parties should remain the same before and after a bank transfer.
 - Isolation
-  - 
+  - Concurrent requests to the database will be intepreted in a sequential order, such that there is no overlap.
 - Durability
   - Every transaction with the database should be permanently recorded.
 
