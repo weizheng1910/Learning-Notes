@@ -38,10 +38,10 @@ Memory storage is transient - the data gets wiped away after a restart. (Memory)
 Simply the time taken to do something. In the context of a web application, it is commonly understood as the time taken for a request-response cycle between the client and the server.
 
 #### Considering the trade off between Latency and Disk design
-In system designs there are certain trade-offs which needs to be weighed - to avoid retrieving data from distant servers, we might choose to store things in memory, but storing things in memory might not be feasible as well. 
+In system designs there are certain trade-offs which need to be weighed - to avoid retrieving data from distant servers, we might choose to store things in memory, but storing things in memory might not be feasible as well. 
 
 ### Throughput 
-* As a server is a finite machine, there is only so many user requests it can process per unit time.
+* As a server is a finite machine, there are only so many user requests it can process per unit time.
 * Knowing the maximum capacity of a server will allow us to know its breaking point, and together with other factors, e.g. the amount of network traffic, we will be able to make an informed decision regarding the system design.
 * The act of measuring the maximum capacity of a server is called benchmarking.
 If there are many servers in the system, the systems throughput is as much as its bottleneck, the server with the lowest processing capacity. Throughput can be increased through horizontal scaling - the buying of multiple hardware, or vertical scaling - the improvment of existing hardware.</br>
