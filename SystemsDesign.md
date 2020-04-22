@@ -102,12 +102,13 @@ Indications:
 #### E-tags
 * If the resource has not changed even after the cache has expired, then the cached response can still be used. 
 * E-tags are arbitrary tokens which tracks the version of the resource, allowing the client to use the cached response though it has expired.
-* When a client makes a request, it includes the Etag it has previously received in the request header.
-* The server checks the Etag token, and the if token hasn't been changed, 304 Not modified status code is sent back to the client. 
+* When the client first makes a request for the resource, it receives an ETag which states the current version of the resource.
+* When a client makes another request, it includes the Etag in the request header.
+* The server checks the Etag token, and the if token hasn't changed, a 304 Not modified status code is sent back to the client. 
 * The client then gets the resource from the cache, and resets the expiry duration.
 
 ##### Making new updates before cache expires
-* A cache response is considered valid until it expires. If an application owner made an update to the resource, its end users wwould not receive the update if their cache response have not expired. To go around this, the application owner can rename its file so that the client interprets it as a new request which hasn't been previously made. 
+* A cached response is considered valid until it expires. If an application owner made an update to the resource, its end users would not receive the update if their cached response have not expired. To force an update, the application owner can rename its file so that the client interprets it as a request from a new resource. 
 
   
 
@@ -138,10 +139,11 @@ Indications:
   
 ##### Horizontal partitioning 
 - Splitting the table horizontally 
-  - A database table of soccer players, with attributes like their height and weight can be split into smaller tables according to their race, for example.
+  - A database containing basic information of soccer players, with data attributes like height and weight can be split into smaller tables according to their race, for example.
   - The partitioning can be visualised as a database being cut horizontally.
-  - Referring to the current example, if we want to query for soccer players above a certain height, we will have to make numerous queries, a query for each of the smaller tables, compared to only a single query we need to make if we have not partitioned the database.
-  - Schema change will inevitably be more tedious compared to a single table.
+  - Drawbacks:
+    - If we were to query for soccer players above a certain height, we will have to make numerous queries, a query for each of the smaller dataset, as compared to only a single query we need to make if we have not partitioned the database.
+    - Schema change will inevitably be more tedious compared to a single table.
   
 #### Database replication 
 Making replicas of your database to avoid single points of failure.
@@ -187,15 +189,16 @@ ACID
 * E - Eventual Consistency: After a write request, the databases( between the primary database and the secondaries) will not immediately sync, but they will after some time has passed from the last update.
 
  ##### MongoDB
- Though a NoSQL Database, MongoDB is strongly-consistent as all reads go to the primary by default ?? (ACCORDING TO THE DOCUMENTATION)
- But if secondary reads are allowed then it is eventually consistent.  (ACCORDING TO THE DOCUMENTATION)
+ According to the database, MongoDB is strongly-consistent as all reads go to the primary by default 
+ But if secondary reads are allowed then it is eventually consistent. This is confusing to me as a strongly-consistent database is one where the secondaries are instantly updated after a write request was made on the primary.
  </br>
+ Interpretation: Mongodb is eventually consistent (whereby there is a lagtime before secondary node gets updated), but it ensures the most recent data gets received by directing read requests to the primary node.
  
 "MongoDB is consistent by default: reads and writes are issued to the primary member of a replica set. Applications can optionally read from secondary replicas, where data is eventually consistent by default"
  
  "All read preference modes except primary may return stale data because secondaries replicate operations from the primary in an asynchronous process. [1] Ensure that your application can tolerate stale data if you choose to use a non-primary mode."
  
- Interpretation: Mongodb is eventually consistent (whereby there is a lagtime before secondary node gets updated), but it ensures the most recent data gets received by directing read requests to the primary node.
+
 
 
 
