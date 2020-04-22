@@ -172,11 +172,20 @@ ACID
   - Concurrent requests to the database will be intepreted in a sequential order, such that there is no overlap.
 - Durability
   - Every transaction with the database should be permanently recorded.
+  
+  | ACID    | Not ACID      | 
+| ------------- |:-------------:| 
+|   PostgreSQL|MySQL(Unless DynamoDB is implemented)|
 
 #### Non-Relational Database
-Ba - Basically available
-S - Soft State 
-E - Eventual Consistency
+Ba - Basically available: A database query will always yield results, though it comes at the cost of consistency.
+S - Soft State: Because of the eventual consistency model, the data within the database might change.
+E - Eventual Consistency: After a write request, the databases( between the primary database and the backup ones) will not immediately become in sync, but they will after some time has passed from the last update.
+
+ ##### MongoDB
+ Replica Set - BASE
+ Sharding -
+
 
 
 
