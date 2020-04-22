@@ -187,7 +187,15 @@ ACID
 * E - Eventual Consistency: After a write request, the databases( between the primary database and the secondaries) will not immediately sync, but they will after some time has passed from the last update.
 
  ##### MongoDB
- Though a NoSQL Database, MongoDB is strongly-consistent as all reads go to the primary by default. 
+ Though a NoSQL Database, MongoDB is strongly-consistent as all reads go to the primary by default ?? (ACCORDING TO THE DOCUMENTATION)
+ But if secondary reads are allowed then it is eventually consistent.  (ACCORDING TO THE DOCUMENTATION)
+ </br>
+ 
+"MongoDB is consistent by default: reads and writes are issued to the primary member of a replica set. Applications can optionally read from secondary replicas, where data is eventually consistent by default"
+ 
+ "All read preference modes except primary may return stale data because secondaries replicate operations from the primary in an asynchronous process. [1] Ensure that your application can tolerate stale data if you choose to use a non-primary mode."
+ 
+ Interpretation: Mongodb is eventually consistent (whereby there is a lagtime before secondary node gets updated), but it ensures the most recent data gets received by directing read requests to the primary node.
 
 
 
