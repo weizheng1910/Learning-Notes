@@ -110,25 +110,6 @@ Indications:
 ##### Making new updates before cache expires
 * A cached response is considered valid until it expires. If an application owner made an update to the resource, its end users would not receive the update if their cached response have not expired. To force an update, the application owner can rename its file so that the client interprets it as a request from a new resource. 
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Database scalability
 #### Database partitioning 
 ##### Vertical partitioning
