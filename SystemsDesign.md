@@ -186,7 +186,7 @@ ACID
 #### Non-Relational Database
 * Ba - Basically available: A database query will always yield results, though it comes at the cost of consistency.
 * S - Soft State: Because of the eventual consistency model, the data within the database might change.
-* E - Eventual Consistency: After a write request, the databases( between the primary database and the backup ones) will not immediately become in sync, but they will after some time has passed from the last update.
+* E - Eventual Consistency: After a write request, the databases( between the primary database and the secondaries) will not immediately sync, but they will after some time has passed from the last update.
 
  ##### MongoDB
  Though a NoSQL Database, MongoDB is strongly-consistent as all reads go to the primary by default. 
