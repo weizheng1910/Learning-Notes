@@ -139,8 +139,8 @@ Indications:
 ##### Horizontal partitioning 
 - Splitting the table horizontally 
   - A database table of soccer players, with attributes like their height and weight can be split into smaller tables according to their race, for example.
-  - The partitioning can be visualised by cutting a database table horizontally.
-  - Referring to the current example, if we wanted to query for soccer players above a certain height, we will have to make numerous queries, a query for each of the smaller tables, compared to only a single query we need to make if we have not partitioned the database.
+  - The partitioning can be visualised as a database being cut horizontally.
+  - Referring to the current example, if we want to query for soccer players above a certain height, we will have to make numerous queries, a query for each of the smaller tables, compared to only a single query we need to make if we have not partitioned the database.
   - Schema change will inevitably be more tedious compared to a single table.
   
 #### Database replication 
