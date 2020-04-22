@@ -173,14 +173,12 @@ ACID
 - Durability
   - Every transaction with the database should be permanently recorded.
   
-  | ACID    | Not ACID      | 
-| ------------- |:-------------:| 
-|   PostgreSQL|MySQL(Unless DynamoDB is implemented)|
+
 
 
 | ACID     | Not Acid         |
 | ------------- |:-------------:| 
-| PostgreSQL     | MySQL | 
+| PostgreSQL     | MySQL unless used with DynamoDB| 
 
 
 #### Non-Relational Database
