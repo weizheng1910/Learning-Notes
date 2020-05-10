@@ -92,5 +92,5 @@ import { add } from `file.js`
 
 `module.exports = { add }`
 
-`const { add } = require(`file.js`)`
+`const { add } = require('file.js')`
 
