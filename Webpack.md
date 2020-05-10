@@ -76,3 +76,16 @@ module.exports = {
 In rails, the gem webpacker is used to compile Javascript code. Webpacker integrates webpack into rails. 
 In rails 6, JS code are now stored in assets/javascript , unlike previously where they are stored in `app/assets/javascript`
 Webpacker provides the `<%= javascript_pack_tag%>` helper to call your js code in the views file of rails. Similarly, CSS files can be stored and retrieved with  `<%= stylesheet_pack_tag 'style' %>`
+
+
+###### Using Webpack
+
+```
+export { add } 
+```
+
+```
+import { add } from `file.js`
+```
+
+
